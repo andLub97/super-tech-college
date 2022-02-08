@@ -30,6 +30,7 @@ li {
 }
 img {
   width: 100%;
+  display: block;
 }
 .apply {
   position: relative;
@@ -71,4 +72,71 @@ h3 {
   text-align: center;
   font-size: 1.8rem;
   font-weight: normal;
+}
+.sports {
+  background: #eee;
+}
+.sports-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+.sports-text h3 {
+  font-size: 2.2rem;
+}
+.italic {
+  font-style: italic;
+}
+footer {
+  text-align: center;
+  background: rgb(62, 61, 61);
+  color: #ddd;
+  padding-bottom: 1rem;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+  margin: 0;
+}
+footer li {
+  padding: 1.6rem 0;
+}
+footer p {
+  font-size: 1.6rem;
+}
+@media (min-width: 900px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10px;
+  }
+  .text-overlay {
+    font-size: 2.4rem;
+    padding: 8rem;
+  }
+  .courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+  .grid-item {
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+  }
+  .grid-item img {
+    border-radius: 2px 2px 0 0;
+  }
+  .sports {
+    display: flex;
+  }
+  .sports > div {
+    flex: 1;
+  }
+  footer ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
